@@ -164,6 +164,14 @@ h1, h2, h3, p { margin-top: 0; }
 .assignment-heading .eyebrow { margin-bottom: 9px; }
 .assignment-heading h2 { margin: 0; font-size: clamp(27px, 3.7vw, 39px); line-height: 1.22; letter-spacing: -.05em; }
 .assignment-meta { display: flex; flex-wrap: wrap; gap: 7px 19px; padding: 14px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--quiet); font: 9px/1.6 var(--mono); }
+.artifact-info-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 17px 30px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+.artifact-info-grid section { padding-left: 13px; border-left: 1px solid var(--line); }
+.artifact-info-grid h3 { margin: 0 0 6px; color: var(--text); font-size: 11px; letter-spacing: .01em; }
+.artifact-info-grid p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.8; }
+.artifact-info-grid strong { color: var(--text); }
+.artifact-reference { margin: 22px 0 0; color: var(--muted); font-size: 11px; line-height: 1.8; }
+.artifact-reference a, .download-link { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.download-link { display: inline-block; margin-top: 10px; font-size: 11px; }
 .assignment-copy { max-width: 840px; margin: 25px auto 0; }
 .assignment-copy p { margin-bottom: 17px; color: #c3cad2; font-size: 13px; line-height: 1.95; }
 .assignment-copy .scenario-title { margin: 29px 0 14px; color: var(--text); font-size: 19px; line-height: 1.4; letter-spacing: -.03em; }
@@ -198,6 +206,7 @@ h1, h2, h3, p { margin-top: 0; }
   .assignment-block { padding-top: 38px; padding-bottom: 38px; }
   .assignment-heading { align-items: flex-start; flex-direction: column; gap: 12px; }
   .assignment-meta { gap: 6px 14px; }
+  .artifact-info-grid { grid-template-columns: 1fr; gap: 13px; }
   .assignment-copy { margin-top: 20px; }
 }
 @media (max-width: 440px) {
